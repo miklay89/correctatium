@@ -1,10 +1,33 @@
 import styled from "styled-components";
 
 export const SFooter = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  max-width: 100%;
   font-size: 14px;
+  line-height: 1.71;
   background-color: #fcfcfc;
+  overflow-x: hidden;
+`;
+
+export const SFooterSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  width: 100%;
   max-width: 1280px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 16px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px 40px;
+  }
 `;
 
 export const SLogoContainer = styled.div`
@@ -25,19 +48,6 @@ export const SContactsContainer = styled.div`
 export const SImg = styled.img`
   width: 100%;
   height: 100%;
-`;
-
-export const SFooterSection = styled.div`
-  display: flex;
-  align-items: center;
-  line-height: 1.71;
-  justify-content: space-between;
-  padding: 20px 60px;
-  @media (max-width: 767px) {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 15px 40px;
-  }
 `;
 
 export const SLink = styled.a`
