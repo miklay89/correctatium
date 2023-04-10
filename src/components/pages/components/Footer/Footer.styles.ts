@@ -53,6 +53,7 @@ export const SImg = styled.img`
 export const SLink = styled.a`
   display: block;
   text-decoration: none;
+  color: #454c5d;
   &:hover {
     text-decoration: underline;
   }
